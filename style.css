@@ -1,0 +1,682 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-item {
+    justify-content: space-evenly;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.m-a {
+    margin: auto;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.p2 {
+    padding: 2rem;
+}
+
+.gap30 {
+    gap: 30px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+/*-------------------------------------------header--------------------------------------------*/
+.head{
+    width: 100%;
+    height: auto;
+    background-color: #2e0327;
+}
+.Header {
+    
+    padding: 20px;
+    z-index: 1;
+    top: 0;
+    width: 1320px;
+    position: sticky;
+    margin-left: 300px;
+}
+
+.logo {
+    width: 150px;
+
+}
+
+.menu li {
+
+    margin-left: 5px;
+    position: relative;
+}
+
+.menu li a {
+    color: aliceblue;
+    padding: 0px 15px;
+    font-size: 18px;
+}
+
+.dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+    min-width: 230px;
+    transition: all ease .3s;
+    transform: translateY(25px);
+    box-shadow: 0 3px 12px 3px rgb(255 82 1 / 10%);
+    overflow: hidden;
+    z-index: 11;
+    background: #350b2d;
+    border: 2px solid rgba(255, 200, 39, 0.4);
+    padding: 10px;
+}
+.dropdown li a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.dropdown li{
+    line-height: 2.5;
+    width: 100%;    
+    transition: all 0.2s linear;
+    text-transform: uppercase;
+}
+
+.menu .arrow:hover .dropdown{ 
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+
+.menu .arrow .dropdown li:hover a{
+    color: black;
+}
+.arrow{
+    position: relative;
+}
+.arrow:hover::after{
+    content: "\f107";
+}
+.arrow::after{
+    position: absolute;
+    content: "\f106";
+    font-family: fontAwesome;
+    transition: all 0.2s linear;
+    right: -5px;
+    color: #fff;
+}
+
+.menu .arrow .dropdown li:hover{
+    background-color:#FFC827;
+    padding-left:10px;
+}
+
+/*-----------------------------------------------baner----------------------------------------*/
+.main-baner {
+    background-image: url("https://template.viserlab.com/casinous/demo/assets/images/banner/bg.png");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    padding: 100px;
+    width: 100%;
+    z-index: -2;
+}
+
+.main-baner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #2e0327;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+
+}
+
+.menu li a {
+    position: relative;
+}
+
+.menu {
+    position: relative;
+}
+
+
+
+.items h1 {
+
+    color: aliceblue;
+    word-spacing: 10px;
+    font-size: 56px;
+    line-height: 1.5;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 70px;
+}
+
+.spn {
+    color: rgb(218, 165, 32);
+}
+
+.items p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 2;
+    color: aliceblue;
+    margin: 20px 0;
+}
+
+
+.img {
+    padding-left: 60px;
+}
+
+/*------------------------------about-us-------------------------------------------*/
+
+
+
+
+.cont {
+    width: 100%;
+    background-color: #2e0327;
+    opacity: 1.2;
+    height: 70vh;
+}
+
+.main {
+    width: 1320px;
+    margin: auto;
+}
+
+.sec1 {
+    margin-top: 90px;
+    margin-left: 25px;
+}
+
+.sec1 h1 {
+    font-size: 50px;
+    color: aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+}
+
+.sec1 p {
+    font-size: 19px;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    margin-top: 30px;
+    word-spacing: 10px;
+
+}
+
+.sec2 {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+/*--------------------------------------gallery-------------------------------*/
+
+.gallery {
+    width: 100%;
+    height: 1220px;
+    background-image: url("\https://template.viserlab.com/casinous/demo/assets/images/banner/bg.png");
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    top: -1px;
+}
+
+.gallery::after {
+    content: "";
+    background-color: #2e0327;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.images h2 {
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+
+.images {
+    width: 1320px;
+    padding-top: 20px;
+    margin-left: 280px;
+
+}
+
+.col-3 {
+    box-shadow: 0px 0px 12px 1px rgb(218 165 32);
+    cursor: pointer;
+}
+
+
+/*-----------------------------------------------blog---------------------------------------------*/
+
+.blog {
+    width: 100%;
+    height: 1920px;
+    background-color: #300929;
+    opacity: 1;
+}
+
+.blogpage {
+    width: 1320px;
+    height: auto;
+    margin-left: 300px;
+    margin-top: -1px;
+    padding-top: 100px;
+    gap: 20px;
+
+}
+
+.blogpage h2 {
+
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 1.4;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    padding-top: 5px;
+
+}
+
+.blogpage p {
+
+    padding-top: 10px;
+    margin: 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card {
+    width: 416px;
+    height: 546px;
+    padding: 20px;
+    background: #350b2d;
+    margin: 24px 0px 0px;
+    border-radius: 5px;
+
+
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card-img img {
+
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.card-img:hover img {
+    transform: scale(1.2);
+
+}
+
+.data li i {
+    color: #FFC827;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+.data li span {
+    color: #fff;
+}
+
+
+
+/*-----------------------------------------------login form------------------------------------*/
+
+.br {
+    border: 2px solid red;
+}
+
+.bb {
+    border: 2px solid black;
+}
+
+.form-info {
+    padding: 60px 40px;
+    border: 1px solid rgba(255, 200, 39, 0.3);
+    background-color: #350b2d;
+}
+
+section {
+    background-color: #350b2d;
+    margin-top: -5px;
+    padding: 100px 0px;
+}
+
+.form-info h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+    font-size: 26px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+
+.form-info ul li span {
+    color: aliceblue;
+}
+
+.form-info ul li span i {
+    color: #FFC827;
+    font-size: 24px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.form-info ul li {
+    padding: 10px 0;
+    font-size: 17px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #FFC827;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: -3.828px -3.828px 6px 0px rgb(255 200 39 / 40%), 3px 5px 8px 0px rgb(255 82 1 / 20%);
+    margin-right: 15px;
+}
+
+.icons i:hover {
+    background-color: #FFC827;
+    transition: all 0.3s ease-in-out;
+    color: rgb(0, 0, 0);
+}
+
+
+.form-content h3 {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-content {
+    margin-top: 48px;
+    padding: 0px 24px;
+}
+
+.form-label {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.7;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+}
+
+.form-control {
+    display: block;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    outline: 0;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: #350b2d;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.text-control {
+    height: 150px;
+    padding-top: 10px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    outline: 0;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: #350b2d;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.form-control:focus {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    background: #350b2d;
+    border: 1px solid rgba(255, 200, 39, 0.6);
+    outline: 0;
+    box-shadow: none;
+}
+
+.text-control:focus {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    background: #350b2d;
+    border: 1px solid rgba(255, 200, 39, 0.6);
+    outline: 0;
+    box-shadow: none;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.p-rl12 {
+    padding: 0px 12px;
+}
+
+.btn button:hover {
+    box-shadow: 11px 11px 32px rgb(255 82 1 / 20%), -11px -11px 32px rgb(255 200 39 / 40%);
+}
+
+.btn button {
+    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    box-shadow: -3.828px -3.828px 6px 0px rgb(255 200 39 / 40%), 3px 5px 8px 0px rgb(255 82 1 / 20%);
+    color: #1f1f23;
+    padding: 14px 35px;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: all ease 0.3s;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    height: 56px;
+    margin: 12px 10px;
+}
+
+.form-wrapper::before {
+    content: "";
+    width: 1050px;
+    background-color: rgb(46, 3, 39);
+    height: 600px;
+    top: -20px;
+    left: 310px;
+    z-index: -1;
+    position: absolute;
+}
+
+.form-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+/*---------------------------------------------------------FOOTER----------------------------*/
+
+
+.foot {
+    width: 100%;
+    height: 189px;
+    background-image: url("./images/img5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index:2;
+}
+
+.foot::after {
+    content: "";
+    background-color: rgb(46, 3, 39);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.9;
+    z-index: -2;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 200, 39, 0.1);
+}
+
+.logo-ft {
+    width: 180px;
+    height: 42px;
+    margin-left: 5px;
+    margin-top: 45px;
+}
+
+.footer .data2 {
+    margin-top: 50px;
+}
+
+.foot .data3 {
+    width: 1320px;
+    height: auto;
+    margin: auto;
+}
+
+.foot .data3 h2 {
+    margin-top: 35px;
+    margin-left: 450px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.foot .data3 .yellow {
+    margin-top: 35px;
+    color: #FFC827;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.footer .data2 li {
+    padding: 3px 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+}
